@@ -1,8 +1,8 @@
-﻿namespace OopInterfaces
+﻿using System;
+
+namespace OopInterfaces
 {
-    public abstract class Shape : IObjectWithArea, 
-                                  ITranslatableObject, 
-                                  IRotatableObject
+    public abstract class Shape : IShape
     {
         public Shape(params Point[] points)
         {
@@ -32,5 +32,9 @@
             }
         }
 
+        public void Print()
+        {
+            Console.WriteLine("Printing the shape");
+        }
     }
 }

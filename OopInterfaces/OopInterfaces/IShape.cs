@@ -1,9 +1,9 @@
 ﻿namespace OopInterfaces
 {
-    public interface IShape
+    public interface IShape : IObjectWithArea,
+                              ITranslatableObject,
+                              IRotatableObject
     {
-        double Area { get; }
-
-        void Rotate(double angleDegrees);
+        void Print();
     }
 }

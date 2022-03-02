@@ -4,6 +4,12 @@ namespace OopInterfaces
 {
     public class Point : ITranslatableObject, IRotatableObject
     {
+        public Point()
+            : this(0, 0)
+        {
+
+        }
+
         public Point(double x, double y)
         {
             X = x;
